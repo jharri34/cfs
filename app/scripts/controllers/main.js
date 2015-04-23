@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the cfsApp
  */
-angular.module('cfsApp')
+angular.module('cfs.controllers')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

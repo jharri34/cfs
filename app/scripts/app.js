@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('cfsApp', [
+  .module('cfs', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -17,19 +17,10 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    'ngTouch',
+    'cfs.directives',
+    'cfs.controllers'
+  ]);
+angular.module('cfs.controllers',[]);
+angular.module('cfs.directives',[]);
+  
