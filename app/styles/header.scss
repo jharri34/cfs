@@ -1,0 +1,33 @@
+nav {
+    background: rgba(0, 23, 32, 0.8);
+}
+
+nav.shrink {
+    background: rgba(0, 23, 32, 0.98);
+}
+
+nav a {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 20px;
+    color: white
+}
+
+nav.shrink a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+nav.shrink .navbar-brand {
+    font-size: 25px;
+}
+
+nav.navbar.shrink {
+    min-height: 35px;
+}
+
