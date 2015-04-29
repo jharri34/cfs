@@ -19,12 +19,16 @@ angular.module('cfs.controllers')
         var map;
 
 
-            var mapOptions = {
-                zoom: 8,
-                center: new google.maps.LatLng(-34.397, 150.644)
-            };
-            map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
+        var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(33.5250, -86.8130)
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
 
+        var input = $('#input');
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input[0]);
+        var autocomplete = new google.maps.places.Autocomplete(input[0]);
+        
 
     });
