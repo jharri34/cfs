@@ -36,16 +36,17 @@
  }
  
  #map-canvas {
-     height: 100%;
+     height: 80%;
      width: 100%;
      margin: 0 auto;
  }
+#directions-panel{
+    position: relative;
+    height: 20%;
+     width: 100%;
+     margin: 0 auto;
+    padding-bottom: 10em;
+    
+}
  
- .map {
-     position: relative;
-     width: 50%;
-     height: 90%;
-     padding-bottom: 0em;
-     margin-bottom: 5em;
- }
  

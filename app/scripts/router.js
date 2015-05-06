@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cfs').config(function ($routeProvider) {
+angular.module('cfs').config(function ($routeProvider,$locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -13,4 +13,6 @@ angular.module('cfs').config(function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
+//    $locationProvider.html5Mode(true);
+    
   });
