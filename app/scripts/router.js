@@ -6,13 +6,16 @@ angular.module('cfs').config(function ($routeProvider,$locationProvider) {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo:'/'
       });
-//    $locationProvider.html5Mode(true);
     
   });
+
+angular.module('cfs').run(function($rootScope, $location, $anchorScroll, $routeParams) {
+  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    $location.hash($routeParams.scrollTo);
+    $anchorScroll();  
+  });
+});
+  

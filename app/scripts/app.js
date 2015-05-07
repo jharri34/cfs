@@ -23,4 +23,3 @@ angular
   ]);
 angular.module('cfs.controllers',[]);
 angular.module('cfs.directives',[]);
-  
